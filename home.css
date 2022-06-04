@@ -1,28 +1,33 @@
-
+*{
+  box-sizing:border-box;
+  padding: 0;
+  margin: 0; 
+}
 body{
     background-color: rgba(210, 180, 200 , 0.4);
-    padding: 0px;
     color: rgba(247, 34, 34, 0.6);
     font-family: Arial, Helvetica, sans-serif;
+
 }
 
 .header{
     background-color: darkblue;
     color:gray;
-    width:98%;
+    width:100%;
     float: inline-end;
     padding: 10px;
-    line-height: 20px;
+    height: 80px;
+    line-height: 25px;
 }
 a button {
   background-color: #04AA6D;
   color: white;
-  padding: 0px;
-  margin-left: 15px ;
+  margin-left: 20px ;
+  padding: 0;
   border: 1px solid #000000;
   cursor: pointer;
   width: 6%;
-  line-height: 16px;
+  height: 15px;
   opacity: 1;
 }
 
@@ -32,14 +37,15 @@ a button:hover{
 .icon-bar {
   width: 80%; 
   background-color: #555; 
-   
+  margin-top: 10px;
 }
 
 .icon-bar a {
   float: left; 
   text-align: center; 
   width: 15%; 
-  margin-top: 1px;
+  margin: 1px;
+  padding: 1px;
   transition: all 0.3s ease; /* Add transition for hover effects */
   color: gray; /* White text color */
   font-size: 20px;
@@ -60,8 +66,6 @@ h1{
 }
 div .favorite{
   margin: 10px 10x;
-  
-  
   
 }
 
@@ -90,7 +94,7 @@ main img{
 
 /* Position the image container (needed to position the left and right arrows) */
 .container {
-  position: absolute;
+  position: relative;
 }
 
 /* Hide the images by default */
@@ -126,35 +130,6 @@ main img{
   border-radius: 3px 0 0 3px;
 }
 
-/* On hover, add a black background color with a little bit see-through 
-.prev:hover,
-.next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
-/* Number text (1/3 etc) *
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-/* Container for image text 
-.caption-container {
-  text-align: center;
-  background-color: #222;
-  padding: 2px 16px;
-  color: white;
-}
-
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-*/
 /* Six columns side by side */
 .column {
   float: left;
@@ -172,10 +147,9 @@ main img{
 }
 
 .gallery img{
-  width: 300px;
-  height: 300px;
-  padding: 15px 15px;
-  margin: auto;
+  width:100%;
+  height: 70%;
+  padding: 25px 15px;
   display: flex;
   font-display: grid;
 }
@@ -186,20 +160,20 @@ main img{
   width: 29%;
   float :left;
   height: 510px;
+  margin-bottom:45px ;
 
 
 }
 
   .desc {
-    font-family:  'Lucida Sans Regular', 'Lucida Grande',  Verdana, sans-serif;
+    font-family:  Verdana, sans-serif;
     color: black;
-    font-size: 16px;
-  width: 280px;
-  padding-bottom: 10px;
+    font-size: 14px;
+    width: 100%;
+    margin-bottom: 20px;
+    
+    
 }
-
-
-
 
 /*here is the sign up page style sheet
 * {box-sizing: border-box}
@@ -274,14 +248,6 @@ button:hover {
   display: table;
 }
 
-/* Change styles for cancel button and signup button on extra small screens */
-@media screen and (max-width: 300px) {
-  .cancelbtn, .signupbtn {
-    width: 50%;
-  }
-}
-
-
 
       /* Bordered form */
       form {
@@ -344,15 +310,46 @@ button:hover {
         float: right;
         padding-top: 16px;
       }
-      
-      /* Change styles for span and cancel button on extra small screens */
-      @media screen and (max-width: 300px) {
-        span.psw {
-          display: block;
-          float: none;
-        }
-        .cancelbtn {
-          width: 100%;
-        }
+.aside {
+  max-width: 100%;
+  margin: 25px 5px 10px;
+  float: left;
+}
+      footer{
+        
+        list-style-type: none;
       }
     
+.about li {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: medium;
+  padding: 5px;
+  margin: 0px;
+  list-style-type: none;
+  
+}
+
+.help li{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: medium;
+  padding: 5px;
+  margin: 0px;
+  list-style-type: none;
+}
+.follow li {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: medium;
+  padding: 5px;
+  margin: 0px;
+  list-style-type: none;
+}
+footer{
+  display: flex;
+ 
+  width: 50%;
+}
+ footer div{
+   margin: 15px 20px 10px;
+   padding: 15px;
+   
+ } 
